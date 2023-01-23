@@ -1,0 +1,20 @@
+Question Link- https://platform.stratascratch.com/coding/10354-most-profitable-companies?code_type=1
+
+
+# Postgre Sql- op
+select 
+company,
+profits
+from forbes_global_2010_2014
+order by profits desc
+limit 3;
+
+
+
+#Pandas op-
+
+
+df = forbes_global_2010_2014
+
+jo = df.sort_values('profits', ascending = False)
+jo[['company', 'profits']].head(3)
